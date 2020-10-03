@@ -1,0 +1,42 @@
+.table {
+    height: 90%;
+    width: 100%;
+    font: 500 1.6rem Roboto;
+
+    display: flex;
+    justify-content: center;
+    
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.table::-webkit-scrollbar{
+    display: none;
+}
+
+.table table {
+    border-collapse: collapse;
+    width: 95%;
+}
+
+.table thead,tbody,td,th {
+    font: 700 2rem Roboto;
+}
+
+.table thead, th {
+    color: #5a2d92;
+    border: 2px solid #af6a29;
+    background: #ebaa28;
+    height: 5rem;
+    width: 95vw;
+    max-width: 900px;
+}
+
+.table table, tbody, td {
+    font-weight: 900;
+    border: 2px solid #af6a29;
+    width: 95vw;
+    max-width: 900px;
+    text-align: center;
+}

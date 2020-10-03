@@ -1,0 +1,124 @@
+#main-container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 25vh 60vh 10vh;
+    align-items: center;
+    background: #632899;
+    color: #F0AA1A;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header img{
+    height: 10rem;
+}
+
+footer {
+    border-top: 1px solid;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem ;
+}
+
+footer img {
+    margin: auto;
+    width:20%;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.buttons-mobile{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+}
+
+.buttons-mobile button {
+    font: 700 2rem 'Courier Prime', monospace;
+    border: none;
+    color: #4B227C;
+    background: #ebaa28;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.buttons-mobile button:hover {
+    background: #d6991d;
+}
+
+@media(min-width:700px){
+
+    header {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header img{
+        height: 20vw;
+        max-height: 25vh;
+        margin-top: 1.5rem;
+        margin-left: 1rem;
+        padding: 0;
+    }
+
+    footer {
+        margin-top: 5.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .content {
+        height: 100%;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    header .buttons{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    header .buttons button{
+        border: none;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin-right: 1rem;
+
+        font: 900 3rem 'Courier Prime', monospace;
+        text-shadow: 1px 1px #5a219e;
+        color: #7938c9;
+
+        background: #f2c531;
+        transition: background-color 0.2s;
+    }
+
+    header .buttons button:hover {
+        background: #d1a71d;
+    }
+}
